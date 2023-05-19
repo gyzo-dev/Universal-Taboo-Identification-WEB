@@ -1,5 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import MainLayout from '@/layouts/MainLayout';
+
 // pages
 import Home from '@/pages/home/Home';
 import About from '@/pages/about/About';
@@ -9,24 +11,30 @@ import Contact from '@/pages/contact/Contact';
 
 const routes = createBrowserRouter([
   {
-    index: true,
-    element: <Home />,
-  },
-  {
-    path: '/about',
-    element: <About />,
-  },
-  {
-    path: '/registration',
-    element: <Registration />,
-  },
-  {
-    path: '/news',
-    element: <News />,
-  },
-  {
-    path: '/contact',
-    element: <Contact />,
+    path: '/',
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/about',
+        element: <About />,
+      },
+      {
+        path: '/registration',
+        element: <Registration />,
+      },
+      {
+        path: '/news',
+        element: <News />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+    ],
   },
 ]);
 
