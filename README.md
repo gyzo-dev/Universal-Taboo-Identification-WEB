@@ -24,6 +24,7 @@
 <br>
 
 # Setup for local environment
-* Clone this repository: `git@github.com:gioshwua/React-Markdown-Editor.git`.
+* Clone this repository:<br/> SSH:`git@github.com:kyletagulao/Universal-Taboo-Identification-WEB.git` <br/>
+                         HTTPS: `https://github.com/kyletagulao/Universal-Taboo-Identification-WEB.git`
 * Run `npm install` from the project root.
 * Run `npm run dev` in a terminal from the project root.
